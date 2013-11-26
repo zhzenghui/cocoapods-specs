@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author       = { "Tencent" => "developer@wechatapp.com" }
   s.source       = { :http => "http://dev.wechatapp.com/download/sdk/WeChat_SDK_iOS_en.zip" }
   s.platform     = :ios
-  s.source_files = 'WeChat_SDK_iOSen/WXApiObject.h', 'WeChat_SDK_iOSen/WXApi.h'
-  s.preserve_paths = 'WeChat_SDK_iOSen/libWeChatSDK.a'
+  s.source_files = 'SDKExport/WXApiObject.h', 'SDKExport/WXApi.h'
+  s.preserve_paths = 'SDKExport/libWeChatSDK.a'
   s.library   = 'WeChatSDK'
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WeChatSDK/WeChat_SDK_iOSen"' }
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WeChatSDK/SDKExport"' }
 end
